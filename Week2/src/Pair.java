@@ -31,4 +31,8 @@ public class Pair<T> {
 		// return item1==item2; INCORRECT! tests for aliases, not logical equivalence
 	}
 
+	public boolean equals(Pair other){
+		return (item1.equals(other.item1)&& item2.equals(other.item1) || item1.equals(other.item2) && item2.equals(other.item1));
+	}
+
 }
