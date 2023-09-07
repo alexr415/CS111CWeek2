@@ -4,9 +4,11 @@ public class PairTester {
 	public static void main(String[] args) {
 		Pair<Integer> numberPair = new Pair<Integer>(3,4);
 		Pair<Integer> numberPair2 = new Pair<Integer>(4,3);
+		Pair<Integer> numberPair3 = new Pair<Integer>(5,3);
 		Pair<String> wordPair = new Pair<String>("hello", "goodbye");
 
 		System.out.println(numberPair.equals(numberPair2));
+		System.out.println(numberPair.equals(numberPair3));
 		System.out.println(numberPair.equals(wordPair));
 		
 		/*System.out.println(numberPair);
