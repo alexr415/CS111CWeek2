@@ -33,7 +33,7 @@ public class Pair<T> {
 
 	public boolean equals(Object o) {
 		if (o instanceof Pair){
-			Pair other = (Pair) o;
+			Pair<T> other = (Pair<T>) o;
 			return (item1.equals(other.item1) && item2.equals(other.item1) || item1.equals(other.item2) && item2.equals(other.item1));
 		}
 		else{
